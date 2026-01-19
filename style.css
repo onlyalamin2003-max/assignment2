@@ -116,3 +116,37 @@ color: #00ff88;
 border-radius: 20px;
 padding: 10px 15px;
 }
+/* about */
+.about{
+width: 1600px;
+    height: 206px;
+    text-align: center;
+    padding: 50px 50px;
+}
+.about-p{
+    width: 1200px;
+    height: 58px;
+}
+.about-p p{
+    margin: 20px auto;
+    padding: 20px auto;
+    color: rgb(110, 106, 106);
+}
+.about h2{
+    font-size: 48px;
+}
+/* stats */
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 20px;
+}
+.stat span{
+    color:rgb(110, 106, 106);
+    text-align: center;
+}
+.stat h3 {
+    color:#00ff88;
+    font-size: 48px;
+}
