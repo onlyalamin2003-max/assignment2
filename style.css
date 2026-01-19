@@ -69,6 +69,9 @@ body {
 
 .circle {
     width: 350px;
+    position: relative;
+   
+
 }
 
 .mic {
@@ -149,4 +152,99 @@ width: 1600px;
 .stat h3 {
     color:#00ff88;
     font-size: 48px;
+}
+/* episode */
+.featured {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 40px;
+    background: #1a0833;
+    border-radius: 24px;
+    color: white;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* grid for 3 cards */
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* card */
+.episode-card {
+    background: #241046;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+/* thumbnail */
+.thumb {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.thumb img {
+    width: 100%;
+    display: block;
+}
+
+/* play button overlay */
+.play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        color: white;
+        text-decoration: none;
+        background: linear-gradient(to right,
+                rgba(247, 233, 63, 1),
+                rgba(251, 9, 180, 1),
+                rgba(145, 0, 248, 1));
+        border-radius: 50%;
+        transition: 0.3s;
+}
+
+.thumb:hover .play-btn {
+    opacity: 1;
+}
+
+.episode-card h3 {
+    margin: 15px 0 8px;
+    font-size: 18px;
+    color: #00ff88;
+}
+
+.episode-card p {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.time {
+    display: flex;
+    margin-top: 10px;
+    color: #00ff88;
+    font-size: 14px;
+    gap: 10px;
+}
+.host{
+    text-align: center;
+}
+
+.hoster{
+    display: flex;
 }
