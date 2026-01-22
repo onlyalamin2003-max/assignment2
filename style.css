@@ -384,31 +384,75 @@ padding: 10px 15px;
   opacity: 0.7;
 }
 /* animation */
-.music-bars{
-  display:flex;
-  align-items:flex-end;
-  gap:6px;
-  height:50px;
+.music-row {
+    display: flex;
+    
 }
 
-.music-bars span{
-  width:6px;
-  height:10px;
-  background: linear-gradient(to top, #ff0080, #7928ca);
-  animation: beat 1s infinite ease-in-out;
+.music-row i {
+    font-size: 32px;
+    margin-right: 83px;
+    margin-top: 20px;
+    animation: beat 1s infinite;
+    background: linear-gradient(to right,
+                rgba(247, 233, 63, 1),
+                rgba(251, 9, 180, 1),
+                rgba(145, 0, 248, 1));
+    
+        background-clip: text;
+        background-clip: text;
+        color: transparent;
 }
 
-.music-bars span:nth-child(1){animation-delay:0s}
-.music-bars span:nth-child(2){animation-delay:.1s}
-.music-bars span:nth-child(3){animation-delay:.2s}
-.music-bars span:nth-child(4){animation-delay:.3s}
-.music-bars span:nth-child(5){animation-delay:.4s}
-
-@keyframes beat{
-  0%,100%{height:10px}
-  50%{height:50px}
+.music-row i:nth-child(1) {
+    animation-delay: 0s
 }
 
+.music-row i:nth-child(2) {
+    animation-delay: .5s
+}
+
+.music-row i:nth-child(3) {
+    animation-delay: 1s
+}
+
+.music-row i:nth-child(4) {
+    animation-delay: 1.5s
+}
+
+.music-row i:nth-child(5) {
+    animation-delay: 2s
+}
+.music-row i:nth-child(6) {
+    animation-delay: 2s
+}
+
+.music-row i:nth-child(7) {
+    animation-delay: 1.5s
+}
+
+.music-row i:nth-child(8) {
+    animation-delay: 1s
+}
+
+.music-row i:nth-child(9) {
+    animation-delay: .5s
+}
+
+.music-row i:nth-child(10) {
+    animation-delay: 0s
+}
+@keyframes beat {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(2)
+    }
+    100% {
+        transform: scale(1.5)
+    }
+}
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
@@ -558,23 +602,13 @@ padding: 10px 15px;
     .social img {
         width: 14px;
     }
-}
-/* animation */
-.music-bars {
-    height: 30px;
-    gap: 4px;
-}
-
-.music-bars span {
-    width: 4px;
-}
-
-@keyframes beat {
-    0%,
-    100% {
-        height: 6px
-}
-    50% {
-        height: 30px
-}
+    /* animation */
+    .music-row {
+        gap: 6px;
+    }
+    
+    .music-row i {
+        font-size: 22px;
+        margin-right: 20px;
+    }
 }
